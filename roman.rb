@@ -1,9 +1,5 @@
 def roman(n)
-  if n ==1
-    return "I"
-  else 
-    return "II"
-  end
+  return "I" * n
 end
 
 require "minitest/spec"
@@ -17,4 +13,7 @@ describe "roman" do
   it "converts the number 2 to the string II" do
     roman(2).must_equal "II"
   end  
+  it "converts the number 3 to the string III" do
+    roman(3).must_equal "III"
+  end
 end
